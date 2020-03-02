@@ -13,6 +13,16 @@ class StringCalculatorTest {
     }
 
     @Test
+    void returns_sum() {
+        assertThat(add("1 3")).isEqualTo(1+3);
+    }
+
+    @Test
+    void returns_sum_1() {
+        assertThat(add("2 5")).isEqualTo(2+5);
+    }
+
+    @Test
     void returns_a_single_number_otherwise() {
         assertThat(add("3")).isEqualTo(3);
     }
