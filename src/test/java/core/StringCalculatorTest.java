@@ -17,8 +17,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    void sum_two_numbers_separated_by_a_space() {
-        assertThat(StringCalculator.add("4 6")).isEqualTo(4+6);
+    void sum_numbers_separated_by_a_space() {
+        assertThat(StringCalculator.add("2 4 6 8 10 12")).isEqualTo(2+4+6+8+10+12);
     }
-
 }
